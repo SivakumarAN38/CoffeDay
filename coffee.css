@@ -1,0 +1,183 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #000000;
+  color: #fff;
+  line-height: 1.6;
+  font-size: large;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Header */
+header {  
+  position: sticky;
+  top: 0;
+  color: rgb(10, 6, 0);
+  background: rgb(255, 170, 0);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #000000;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 1.2rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffe1b4;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 600px;
+}
+.hero-content img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffb703;
+}
+
+.hero p {
+  margin: 1rem 0 2rem;
+  font-size: 1.2rem;
+}
+
+.hero button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background: #ffb703;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+canvas#coffeeCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 10px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffb703;
+  align-items: center;
+  scroll-margin-top: 80px; /* prevents overlap with navbar */
+}
+
+#about{
+  color: #ffb703;
+}
+/* Menu Grid */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.menu-item {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+  color: #ffb703;
+}
+
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+.map {
+  margin-top: 1rem;
+  max-width: 90%;
+  border-radius: 12px;
+}
+
+/* Contact Form */
+form {
+  max-width: 500px;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 1rem;
+  border: none;
+  width: 500px;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+button[type="submit"] {
+  background: #f4c27a;
+  color: #121212;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  height: 40px;
+  font-size: 20px;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background: #ffd789;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #1a1a1a;
+  color: #ffffff;
+}
